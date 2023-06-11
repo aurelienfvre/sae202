@@ -1,7 +1,9 @@
 <header>
     <div class="navbar">
         <div class="navbar-left">
-            <img src="assets/imgs/logo.svg" alt="Logo">
+            <a href="../index.php">
+                <img src="assets/imgs/logo.svg" alt="Logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="../index.php"><i class="fas fa-home"></i> Accueil</a></li>
