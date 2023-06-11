@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    overflow-x:hidden;
+
+}
+/*navbar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -5,6 +15,7 @@
     padding: 20px 80px; /* J'ai ajouté votre marge ici */
     background-color: #FFFFFF;
     color: #7F8FA6;
+    
 }
 
 .navbar-left, .navbar-right {
@@ -59,3 +70,87 @@
     color: #FFFFFF;
     transition: 0.3s;
 }
+
+/*section1 index*/
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+    margin-top: 230px; /* Ajouté pour créer de l'espace entre la navbar et la section principale */
+}
+
+.left-content {
+    max-width: 50%;
+}
+
+.right-content {
+    max-width: 50%;
+    margin-right: 130px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #7F8FA6;
+    font-family: Arial, sans-serif; /* Spécifiez la police Arial pour le titre */
+}
+
+p {
+    font-size: 1rem;
+    color: #7F8FA6;
+    font-family: 'DM Sans', sans-serif;
+    width: 574px;
+    text-align: left;
+}
+.main-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #669F59;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: 2px solid #669F59;
+    transition: 0.3s;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-btn:hover {
+    
+    background-color: transparent;
+    color: #669F59;
+    transition: 0.3s;
+
+}
+
+.main-btn.secondary {
+    border: 2px solid #669F59;
+    background-color: transparent;
+    color: #669F59; 
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-btn.secondary:hover {
+    background-color: #669F59;
+    color: #FFFFFF;
+}
+
+.main-btn i {
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+
+.right-content img{
+    max-height: calc(100vh - 285px - 54px); 
+    width: 120%; 
+    display: block; /* Ajoutez ceci */
+    margin: 0; /* Ajoutez ceci */
+    padding: 0; /* Ajoutez ceci */
+}
+
+

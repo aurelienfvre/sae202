@@ -19,7 +19,7 @@ $user = $req->fetch(PDO::FETCH_ASSOC);
 if($user && password_verify($mot_de_passe, $user['mot_de_passe'])) {
     session_start();
     $_SESSION['user'] = $user;
-    header('Location: modifProfil.php');
+    header('Location: index.php');
     exit;
 } else {
     session_start();

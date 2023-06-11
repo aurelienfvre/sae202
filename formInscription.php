@@ -2,7 +2,7 @@
 session_start();
 include(__DIR__.'/config/config.inc.php');
 include(__DIR__.'/config/header.inc.php');
-include(__DIR__.'/config/menu.inc.php');
+include(__DIR__.'/config/fonctions.inc.php');
 
 ?>
 

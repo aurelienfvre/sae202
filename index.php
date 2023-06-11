@@ -1,15 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>DailyDrivers</title>
-</head>
+<html>
 <body>
     
 
@@ -22,5 +11,16 @@ include 'config/header.inc.php';
 //je veux un truc à afficher pour test si ça fonctionne la page
 
 ?>
+<main class="main-content">
+    <div class="left-content">
+        <h1>DailyDrivers</h1>
+        <p>L'application de covoiturage éco-responsable qui vous offre un vaste choix de trajets à petits prix, tout en contribuant à réduire votre empreinte écologique.</p>
+        <a href="#" class="main-btn"><i class="fas fa-search"></i> Rechercher un trajet</a>
+        <a href="#" class="main-btn secondary">Proposer un trajet <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="right-content">
+        <img src="assets/imgs/section1.svg" alt="Description de l'image" />
+    </div>
+</main>
 </body>
 </html>
