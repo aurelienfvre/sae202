@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* J'ai ajouté votre marge ici */
+    background-color: #FFFFFF;
+    color: #7F8FA6;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    margin-right: 20px;
+    width: 150px;
+    height: 112px;
+}
+
+.navbar a {
+    color: #7F8FA6;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px; /* taille de police réduite pour équilibrer les proportions */
+}
+
+.navbar a:hover {
+    color: #AEC5E5;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.border-btn {
+    border: 2px solid #AEC5E5;
+    padding: 5px 10px; /* espace intérieur réduit pour équilibrer les proportions */
+    border-radius: 48px; 
+    width: 116px; /* largeur réduite pour équilibrer les proportions */
+    height: 48px; /* hauteur réduite pour équilibrer les proportions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.border-btn a:hover {
+    background-color: #AEC5E5;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
