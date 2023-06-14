@@ -7,6 +7,13 @@ body{
     overflow-x:hidden;
 
 }
+a{
+    text-decoration: none;
+    color: #669f59;
+}
+a:hover{
+    color: #AEC5E5;
+}
 /*navbar*/
 .navbar {
     display: flex;
@@ -78,7 +85,8 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0 160px;
-    margin-top: 230px; /* Ajouté pour créer de l'espace entre la navbar et la section principale */
+    margin-top: 230px;
+    margin-bottom: 230px; /* Ajouté pour créer de l'espace entre la navbar et la section principale */
 }
 
 .left-content {
@@ -87,7 +95,7 @@ body{
 
 .right-content {
     max-width: 50%;
-    margin-right: 130px;
+    margin-right: 80px;
 }
 
 h1 {
@@ -154,3 +162,585 @@ p {
 }
 
 
+/* section2 index */
+
+.main-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px;
+    margin-top: 50px;
+     max-width: 50%;
+    margin-right: 80px;
+    max-width: 50%;
+    margin-right: 80px;
+}
+
+.main-content-image {
+    max-height: calc(100vh - 285px - 54px); 
+    width: 120%; 
+    display: block; /* Ajoutez ceci */
+    margin: 0; /* Ajoutez ceci */
+    padding: 0;
+    margin-right: 216px;
+}
+
+.form-container {
+    width: 517px;
+    height: 685px;
+    border-radius: 76px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #7F8FA6;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group i {
+    margin-right: 10px;
+    color: #EBF2FC;
+    
+}
+
+.form-group label {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 304px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background-color: #EBF2FC; /* changer la couleur de fond */
+    border-radius: 42px;
+    padding: 15px;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-title {
+    color: #EBF2FC;
+    font-size: 2.5rem; /* Augmenter la taille de la police */
+    margin-bottom: 40px; /* changer la couleur du titre */
+}
+
+
+
+.main-btn1 {
+    display: inline-block;
+    border: 2px solid #EBF2FC;
+    color: #EBF2FC;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 60%; /* Réduire la largeur */
+    margin: 0 auto; /* Centrer le bouton */
+}
+
+
+.main-btn1:hover {
+    color: black;
+    background-color: #EBF2FC;
+}
+.visuallyhidden { 
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/* formulaire connexion */
+
+.login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.form-container1 {
+    width: 517px;
+    max-width: 100%;
+    border-radius: 46px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #7F8FA6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-container1 label {
+    color: #EBF2FC;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-container1 input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 42px;
+    padding-left: 10px; /* Ajoute un espace à gauche du texte */
+}
+
+.form-container1 input[type="submit"] {
+    display: inline-block;
+    border: 2px solid #EBF2FC;
+    color: #EBF2FC;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 60%; /* Réduire la largeur */
+    margin: 30px auto 20px; /* Centrer le bouton et ajouter de l'espace en bas */
+}
+
+.form-container1 input[type="submit"]:hover {
+    color: black;
+    background-color: #EBF2FC;
+}
+
+.register-container {
+    width: 100%;
+    color: #EBF2FC;
+    text-align: right;
+    margin-top: 20px; /* Espacement entre le bouton et le texte d'inscription */
+}
+
+.register-container p {
+    margin: 0;
+    color: #EBF2FC;
+}
+
+.register-container a {
+    color: #EBF2FC;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    color: #AEC5E5;
+    text-decoration: underline;
+}
+
+/* formulaire inscription */
+
+.form-container2 {
+    width: 517px;
+    max-width: 100%;
+    border-radius: 46px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #7F8FA6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed from center to flex-start */
+}
+
+.form-container2 form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container2 label {
+    color: #EBF2FC;
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Reduced from 20px */
+}
+
+.form-container2 input, 
+.form-container2 select {
+    font-size: 16px; /* Définit explicitement la taille de la police */
+    line-height: 1.5; /* Définit explicitement la hauteur de la ligne */
+    padding: 10px; /* Définit explicitement le rembourrage */
+    width: 100%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 42px;
+}
+
+.form-container2 select {
+    -webkit-appearance: none; /* Pour les navigateurs Webkit (Chrome/Safari) */
+    -moz-appearance: none; /* Pour Firefox */
+    appearance: none;
+    cursor: pointer; /* Standard */
+}
+
+.form-container2 .half-width {
+    width: calc(50% - 10px); /* Adjusted to accommodate padding */
+}
+
+.form-container2 .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.form-container2 input[type="submit"] {
+    display: inline-block;
+    border: 2px solid #EBF2FC;
+    color: #EBF2FC;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 60%; 
+    margin: 0 auto 20px; 
+}
+
+.form-container2 input[type="submit"]:hover {
+    color: black;
+    background-color: #EBF2FC;
+}
+
+/* formulaire de contact */
+h2{
+    color:#EBF2FC;
+}
+.contact-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contact-form-container {
+    width: 517px;
+    max-width: 100%;
+    border-radius: 46px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #7F8FA6;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make sure each form group takes the full width */
+}
+
+.contact-form-row .contact-form-group {
+    width: 48%; /* Only form groups within a row should be 48% */
+}
+
+.contact-form-container label {
+    align-self: flex-start;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 42px;
+    padding-left: 10px;
+    background-color: #EBF2FC;
+}
+
+.contact-form-container textarea {
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 20px;
+    border-radius: 29px;
+    padding: 10px; 
+}
+
+.contact-form-container input[type="submit"] {
+    display: inline-block;
+    border: 2px solid #EBF2FC;
+    color: #EBF2FC;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 100%; 
+    margin: 0 auto 20px;
+}
+
+.contact-form-container input[type="submit"]:hover {
+    color: black;
+    background-color: #EBF2FC;
+}
+
+/* profil */
+
+#profil-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.profil-field {
+    margin-bottom: 20px;
+}
+
+.profil-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profil-field span {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profil-field input[type="text"], .profil-field input[type="password"], .profil-field input[type="email"], .profil-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.profil-field .edit-icon {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#update-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* trajets recherche */
+.fullscreen-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    
+}
+
+.form-container-new {
+    width: 517px;
+    max-width: 90%;
+    background-color: #7F8FA6;
+    padding: 40px;
+    border-radius: 76px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title-new {
+    font-size: 2.5rem;
+    color: #EBF2FC;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.form-group-new {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group-new i {
+    margin-right: 10px;
+    color: #EBF2FC;
+}
+
+.form-group-new label {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+input[type="text"].new, input[type="date"].new, select.new {
+    width: 304px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background-color: #EBF2FC;
+    border-radius: 42px;
+    padding: 15px;
+}
+
+
+select.new {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.main-btn1-new {
+    display: inline-block;
+    border: 2px solid #EBF2FC;
+    color: #EBF2FC;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-btn1-new:hover {
+    color: black;
+    background-color: #EBF2FC;
+}
+
+
+
+  
+/* footer */
+
+footer {
+   
+    color: #7F8FA6;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-left a {
+    color: #7F8FA6;
+    text-decoration: none;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0;
+    margin-right: 80px;
+}
+.footer-right li {
+    margin-right: 20px;
+}
+
+.footer-right a {
+    color: #7F8FA6;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #AEC5E5;
+}
+
+/*mentions légales*/
+
+.container {
+    display: grid;
+    place-items: center; 
+    padding-top: 100px; 
+    
+  }
+
+  h1.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+   .information {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }

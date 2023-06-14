@@ -1,0 +1,58 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("Location: formConnexion.php"); 
+    exit;
+}
+// Si un message d'erreur a été défini, l'afficher
+if (isset($_SESSION['erreur'])) {
+    echo '<p class="error">' . $_SESSION['erreur'] . '</p>';
+
+    // Ensuite, effacez le message d'erreur pour qu'il n'apparaisse qu'une fois
+    unset($_SESSION['erreur']);
+}
+include 'config/config.inc.php';
+include 'config/fonctions.inc.php';
+include 'config/header.inc.php';
+?>
+
+<div class="fullscreen-div">
+    <div class="form-container-new">
+        <h2 class="form-title-new">OÙ ALLEZ VOUS ?</h2>
+
+        <form action="resultatRechercheTrajet.php" method="post" >
+            <div class="form-group-new">
+                <i class="fas fa-map-pin fa-2x"></i>
+                <label for="depart" class="visuallyhidden">Départ</label>
+                <input type="text" id="depart" name="depart" placeholder="Départ" class="new" required="">
+            </div>
+            <div class="form-group-new">
+                <i class="fas fa-map-pin fa-2x"></i>
+                <label for="arrivee" class="visuallyhidden">Arrivée</label>
+                <input type="text" id="arrivee" name="arrivee" placeholder="Arrivée" class="new" required="">
+            </div>
+            <div class="form-group-new">
+                <i class="fas fa-calendar-alt fa-2x"></i>
+                <label for="date" class="visuallyhidden">Date de départ</label>
+                <input type="date" id="date" name="date" class="new" required="">
+            </div>
+            <div class="form-group-new">
+                <i class="fas fa-users fa-2x"></i>
+                <label for="places" class="visuallyhidden">Nombre de places</label>
+                <select id="places" name="places" class="new" required="">
+                    <option selected disabled>Nombre de places</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group-new">
+                <button class="main-btn1-new">Rechercher</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<?php include 'config/footer.inc.php'; ?>

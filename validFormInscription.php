@@ -9,7 +9,8 @@ if (
     isset($_POST['prenom']) && !empty($_POST['prenom']) &&
     isset($_POST['email']) && !empty($_POST['email']) &&
     isset($_POST['mot_de_passe']) && !empty($_POST['mot_de_passe']) &&
-    isset($_POST['type_utilisateur']) && !empty($_POST['type_utilisateur'])
+    isset($_POST['type_utilisateur']) && !empty($_POST['type_utilisateur']) &&
+    isset($_POST['vehicule_nom']) && !empty($_POST['vehicule_nom'])
 ) {
     // Récupérer les données du formulaire
     $nom = $_POST['nom'];
@@ -17,6 +18,7 @@ if (
     $email = $_POST['email'];
     $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);  // Hacher le mot de passe
     $type_utilisateur = $_POST['type_utilisateur'];
+    $vehicule_nom = $_POST['vehicule_nom'];
 
     // Vérifier si l'email est déjà utilisé
     $req = $mabd->prepare("SELECT * FROM utilisateurs WHERE email = :email");
@@ -30,7 +32,7 @@ if (
         exit();
     } else {
         // Préparer la requête SQL pour insérer un nouvel utilisateur
-        $req = $mabd->prepare("INSERT INTO utilisateurs (nom, prenom, email, mot_de_passe, type_utilisateur) VALUES (:nom, :prenom, :email, :mot_de_passe, :type_utilisateur)");
+        $req = $mabd->prepare("INSERT INTO utilisateurs (nom, prenom, email, mot_de_passe, type_utilisateur, vehicule_nom) VALUES (:nom, :prenom, :email, :mot_de_passe, :type_utilisateur, :vehicule_nom)");
 
         $resultat = $req->execute([
             'nom' => $nom,
@@ -38,6 +40,7 @@ if (
             'email' => $email,
             'mot_de_passe' => $mot_de_passe,
             'type_utilisateur' => $type_utilisateur,
+            'vehicule_nom' => $vehicule_nom,
         ]);
 
         if($resultat) {

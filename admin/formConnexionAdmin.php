@@ -1,6 +1,6 @@
 <?php include '../config/config.inc.php'; ?>
 <?php include '../config/fonctions.inc.php'; ?>
-<?php include '../config/header.inc.php'; ?>
+
 
 <form method="post" action="verifFormConnexionAdmin.php">
     <label for="nom_admin">Pseudo Admin :</label>
