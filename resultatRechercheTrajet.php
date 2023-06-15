@@ -32,16 +32,38 @@ if (count($resultat) == 0) {
     echo "<p>Aucun résultat trouvé.</p>";
 } else {
     foreach ($resultat as $ligne) {
-    echo '<div>';
-    echo '<p>Ville de départ: '.$ligne['lieu_depart'].'</p>';
-    echo '<p>Ville d\'arrivée: '.$ligne['lieu_arrivee'].'</p>';
-    echo '<p>Date de départ: '.$ligne['date_heure'].'</p>';
-    echo '<p>Places disponibles: '.$ligne['nb_places'].'</p>';
-    // Inclure l'ID du trajet dans le lien de réservation
-    echo '<a href="reserverTrajet.php?id='.$ligne['id'].'">Réserver</a>';
-    echo '</div><hr>';
-}
-
+        echo '<div class="tripBox">
+        <div class="tripDetails">
+            <div class="departureCity"><p>'.$ligne['lieu_depart'].'</p></div>
+            <div class="tripLine">
+                <div class="startPoint"></div>
+                <div class="line"></div>
+                <div class="endPoint"></div>
+            </div>
+            <div class="arrivalCity"><p>'.$ligne['lieu_arrivee'].'</p></div>
+        </div>
+        <div class="smallDetails">
+            <div class="smallCity"><p>'.$ligne['lieu_depart'].'</p></div>
+            <div class="smallCity"><p>'.$ligne['lieu_arrivee'].'</p></div>
+        </div>
+        <div class="timeDetails">
+            <div class="departureDetails">
+                <p>Départ le: '.$ligne['date_heure'].'</p>
+                <p>À '.$ligne['heure_depart'].'</p>
+            </div>
+            <div class="arrivalDetails">
+                <p>Arrivée à: '.$ligne['heure_arrivee'].'</p>
+                <p>Places disponibles: '.$ligne['nb_places'].'</p>
+            </div>
+        </div>
+        <form action="reserverTrajet.php" method="post">
+            <input type="hidden" name="trajet_id" value="'.$ligne['trajet_id'].'">
+            <input type="hidden" name="utilisateur_id" value="'. $_SESSION['user']['utilisateur_id'] .'">
+            <input id="submitBtn" type="submit" value="Réserver">
+            <br>    
+        </form>
+    </div>';
+    }
 }
 
 include 'config/footer.inc.php';

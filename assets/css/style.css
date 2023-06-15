@@ -944,4 +944,85 @@ footer {
     margin-bottom: 10px;
   }
 
-  
+/* reservation  */
+
+
+.tripBox {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.tripDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.departureCity, .arrivalCity {
+    font-weight: bold;
+}
+
+.tripLine {
+    display: flex;
+    align-items: center;
+}
+
+.tripLine .startPoint, .tripLine .endPoint {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.tripLine .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #333;
+    margin: 0 10px;
+}
+
+.smallDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.timeDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.departureDetails, .arrivalDetails {
+    font-size: 0.9em;
+}
+
+.departureDetails p:first-child, .arrivalDetails p:first-child {
+    font-weight: bold;
+}
+
+#submitBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7f8fa6; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#submitBtn:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}

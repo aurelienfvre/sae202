@@ -9,8 +9,7 @@ if (
     isset($_POST['prenom']) && !empty($_POST['prenom']) &&
     isset($_POST['email']) && !empty($_POST['email']) &&
     isset($_POST['mot_de_passe']) && !empty($_POST['mot_de_passe']) &&
-    isset($_POST['type_utilisateur']) && !empty($_POST['type_utilisateur']) &&
-    isset($_POST['vehicule_nom']) && !empty($_POST['vehicule_nom'])
+    isset($_POST['type_utilisateur']) && !empty($_POST['type_utilisateur'])
 ) {
     // Récupérer les données du formulaire
     $nom = $_POST['nom'];
@@ -18,7 +17,12 @@ if (
     $email = $_POST['email'];
     $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);  // Hacher le mot de passe
     $type_utilisateur = $_POST['type_utilisateur'];
-    $vehicule_nom = $_POST['vehicule_nom'];
+    $vehicule_nom = '';
+
+    // Vérifier si le type d'utilisateur est différent de "passager"
+    if ($type_utilisateur != 'passager' && isset($_POST['vehicule_nom']) && !empty($_POST['vehicule_nom'])) {
+        $vehicule_nom = $_POST['vehicule_nom'];
+    }
 
     // Vérifier si l'email est déjà utilisé
     $req = $mabd->prepare("SELECT * FROM utilisateurs WHERE email = :email");

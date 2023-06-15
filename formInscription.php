@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include(__DIR__.'/config/config.inc.php');
 include(__DIR__.'/config/header.inc.php');
@@ -43,18 +43,17 @@ include(__DIR__.'/config/fonctions.inc.php');
 
         <div class="row" style="display: none;" id="vehicule_nom">
             <div class="half-width">
-                <label for="vehicule_nom">Nom du véhicule :</label>
-                <input type="text" id="vehicule_nom" name="vehicule_nom" placeholder="Audi A3">
+                <label for="vehicule_nom_input">Nom du véhicule :</label>
+                <input type="text" id="vehicule_nom_input" name="vehicule_nom" placeholder="Audi A3">
             </div>
         </div>
 
-        
         <input type="submit" value="Inscription">
 
         <div class="register-container">
-        <p>Vous avez déjà un compte?</p>
-        <p><a href="formConnexion.php">Connectez-vous !</a></p>
-    </div>
+            <p>Vous avez déjà un compte?</p>
+            <p><a href="formConnexion.php">Connectez-vous !</a></p>
+        </div>
     </form>
   </div>
 </div>

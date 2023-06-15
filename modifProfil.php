@@ -105,6 +105,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <input type="submit" value="Mettre à jour" id="update-button" style="display: none;">
+    <a href="supprimerProfil.php">Supprimer le compte</a>
 </form>
 </div>
 
