@@ -15,13 +15,15 @@
             <a href="../index.php">
                 <img src="assets/imgs/logo.svg" alt="Logo">
             </a>
+            <div class="navbar-content">
             <nav>
                 <ul>
                     <li><a href="../index.php"><i class="fas fa-home"></i> Accueil</a></li>
-                    <li><a href="#"><i class="fas fa-map-pin"></i> Parking</a></li>
+                    <li><a href="../parking.php"><i class="fas fa-map-pin"></i> Parking</a></li>
                     <li><a href="../formContact.php"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
+            </div>
         </div>
         <?php
 // Vérifier si l'utilisateur est connecté

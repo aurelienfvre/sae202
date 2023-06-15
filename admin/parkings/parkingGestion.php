@@ -16,8 +16,7 @@
          <thead>
             <tr>
                <th>Nom</th>
-               <th>Adresse</th>
-               <th>Ville</th>
+               <th>Iframe</th>
             </tr>
          </thead>
 		<tbody>
@@ -27,18 +26,25 @@
 			$req = "SELECT * FROM parkings";
 			$resultat = $mabd->query($req);
 
-			foreach ($resultat as $value) {
-			    echo '<tr>' ;
-			    echo '<td>'.$value['nom'] . '</td>';
-			    echo '<td>'.$value['adresse'] . '</td>';
-			    echo '<td>'.$value['ville'] . '</td>';
-			    echo '<td>
-			            <a href="parkingDelete.php?num='.$value['parking_id'].'">Supprimer</a>
-			            <a href="parkingUpdate.php?num='.$value['parking_id'].'">Modifier</a>
-			          </td>';
-
-			    echo '</tr>';
+			echo '<div class="card-container">';
+			foreach ($resultat as $ligne) {
+				echo '<div class="card">
+					<div class="parking_name">
+						'.$ligne['nom'].'
+						<div class="card-actions">
+							<a href="parkingDelete.php?num='.$ligne['parking_id'].'">Supprimer</a>
+							<a href="parkingUpdate.php?num='.$ligne['parking_id'].'">Modifier</a>
+						</div>
+					</div>
+					<div class="map">
+						<iframe src="'.$ligne['iframe_parking'].'" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>   
+				</div>';
 			}
+			echo '</div>';
+        
+
+			
 			?>
 		</tbody>
 	</table>

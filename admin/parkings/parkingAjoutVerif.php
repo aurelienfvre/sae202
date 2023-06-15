@@ -10,12 +10,11 @@
 <?php
 $nom=$_POST['nom'];
 $adresse=$_POST['adresse'];
-$ville=$_POST['ville'];
 
 
 include '../../config/config.inc.php';
 
-$req = 'INSERT INTO parkings (nom,adresse,ville) VALUES ("'.$nom.'","'.$adresse.'","'.$ville.'")';
+$req = "INSERT INTO parkings (nom, iframe_parking) VALUES ('$nom', '$adresse')";
 $resultat = $mabd->query($req);
 
 ?>

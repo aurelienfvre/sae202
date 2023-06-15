@@ -25,11 +25,8 @@
 	    <label for="nom">Nom:</label>
 	    <input type="text" name="nom" id="nom" value="<?php echo $parking['nom'] ?>" required>
 	    
-	    <label for="adresse">Adresse:</label>
-	    <input type="text" name="adresse" id="adresse" value="<?php echo $parking['adresse'] ?>" required>
-	    
-	    <label for="ville">Ville:</label>
-	    <input type="text" name="ville" id="ville" value="<?php echo $parking['ville'] ?>" required>
+	    <label for="adresse">Iframe:</label>
+	    <input type="text" name="adresse" id="adresse" value="<?php echo $parking['iframe_parking'] ?>">
 	    
 	    <input type="submit" value="Modifier">
 	</form>

@@ -77,6 +77,78 @@ a:hover{
     color: #FFFFFF;
     transition: 0.3s;
 }
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    .navbar-left {
+        align-self: flex-start;
+    }
+    .navbar-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .navbar-left img {
+        margin: 10px 0;
+        width: 120px;
+        height: 90px;
+    }
+    .navbar a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .navbar li {
+        margin: 5px 0;
+    }
+    .border-btn {
+        margin: 5px 0;
+        width: 100px;
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    .navbar-left {
+        align-self: flex-start;
+    }
+    .navbar-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .navbar-left img {
+        margin: 10px 0;
+        width: 120px;
+        height: 90px;
+    }
+    .navbar a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .navbar ul {
+        display: contents;
+        margin: 10px 0;
+    }
+    .navbar li {
+        margin: 5px 0;
+    }
+    .border-btn {
+        margin: 5px 0;
+        width: 100px;
+        height: 40px;
+    }
+}
 
 /*section1 index*/
 
@@ -159,6 +231,39 @@ p {
     display: block; /* Ajoutez ceci */
     margin: 0; /* Ajoutez ceci */
     padding: 0; /* Ajoutez ceci */
+}
+
+
+@media (max-width: 768px) { /* C'est un point de rupture courant pour les tablettes et les mobiles. Vous pouvez l'ajuster en fonction de vos besoins */
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .left-content, .right-content {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .right-content {
+        margin-top: 20px; /* Espacement entre les contenus gauche et droite sur mobile */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .right-content img {
+        display: none;
+    }
 }
 
 
@@ -279,6 +384,32 @@ select {
     position: absolute;
     width: 1px;
 }
+@media (max-width: 768px) {
+    .main-content2 {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .main-content-image {
+        display: none;
+    }
+
+    .form-container {
+        width: 300px;
+        height: auto;
+        margin: 0 auto 0 40px;
+    }
+
+    input[type="text"], input[type="date"], select {
+        width: 100%;
+    }
+
+    .main-btn1 {
+        width: 100%;
+    }
+}
+
 
 
 /* formulaire connexion */
@@ -287,7 +418,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -584,6 +715,54 @@ h2{
     border: none;
     border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+    #profil-form {
+        width: 90%;
+    }
+}
+
+/* Parking */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33% - 20px); /* Calcule la largeur des cartes en soustrayant les marges */
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #7F8FA6;
+    color: #EBF2FC;
+    border-radius: 40px;
+}
+
+
+.parking_name {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
 
 /* trajets recherche */
 .fullscreen-div {
@@ -723,6 +902,26 @@ footer {
     color: #AEC5E5;
 }
 
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer-right ul {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .footer-right li {
+        margin: 10px;
+    }
+
+    .footer-right a {
+        display: inline-block;
+    }
+}
+
 /*mentions légales*/
 
 .container {
@@ -744,3 +943,5 @@ footer {
     line-height: 1.5;
     margin-bottom: 10px;
   }
+
+  

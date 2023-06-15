@@ -5,9 +5,9 @@
         </div>
         <div class="footer-right">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Parking</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="parking.php">Parking</a></li>
+                <li><a href="formContact.php">Contact</a></li>
                 <li><a href="https://mmi22h08.sae202.ovh/agence/" target="_blank">CO'VOIT</a></li>
             </ul>
         </div>

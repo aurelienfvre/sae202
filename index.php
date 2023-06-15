@@ -15,7 +15,7 @@ include 'config/header.inc.php';
     <div class="left-content">
         <h1>DailyDrivers</h1>
         <p>L'application de covoiturage éco-responsable qui vous offre un vaste choix de trajets à petits prix, tout en contribuant à réduire votre empreinte écologique.</p>
-        <a href="reserverTrajet.php" class="main-btn"><i class="fas fa-search"></i> Rechercher un trajet</a>
+        <a href="formRechercheTrajet.php" class="main-btn"><i class="fas fa-search"></i> Rechercher un trajet</a>
         <a href="proposerTrajet.php" class="main-btn secondary">Proposer un trajet <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="right-content">
