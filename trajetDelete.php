@@ -2,7 +2,7 @@
 // recupérer dans l'url l'id du trajet à supprimer
 $num=$_GET['num'];
 
-include '../../config/config.inc.php';
+include 'config/config.inc.php';
 
 // On récupère d'abord les informations du trajet à supprimer pour pouvoir les afficher
 $req = "SELECT * FROM trajets WHERE trajet_id = $num";

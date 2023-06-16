@@ -29,4 +29,6 @@ if ($resultat) {
 }
 
 include 'config/footer.inc.php';
+header("refresh:2;url=trajetUtilisateur.php");
+exit;
 ?>
